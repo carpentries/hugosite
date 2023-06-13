@@ -1,6 +1,7 @@
 ---
 title: "About"
 description: "This is your life"
+url: "/bacon/"
 menu:
   main:
     weight: 1
