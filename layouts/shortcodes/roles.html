@@ -1,0 +1,5 @@
+{{ $all_roles := getJSON "https://feeds.carpentries.org/all_badged_people.json" }}
+<ul>
+{{ range where $all_roles (.Get 0) true  }}
+<li>{{ .person_name }}</li>
+{{ end }}
