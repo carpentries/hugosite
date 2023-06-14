@@ -1,0 +1,28 @@
+<div>
+    {{ $dataJ := getJSON "https://feeds.carpentries.org/all_badged_people.json" }}
+
+
+<h1> Maintainers (if) </h1>
+    <ul>
+    {{ range $dataJ }}
+    
+    {{ if .is_maintainer }}
+    <li>{{ .person_name }}</li>
+    {{ end }}
+
+    {{ end }}
+
+    </ul>
+
+
+<h1>Maintainers (where) </h1>
+
+{{ $data2 := getJSON "https://feeds.carpentries.org/all_badged_people.json" }}
+<ul>
+{{ range where $data2 (.Get 0) true  }}
+<li>{{ .person_name }}</li>
+{{ end }}
+
+
+</ul>
+</div>

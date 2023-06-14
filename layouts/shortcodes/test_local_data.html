@@ -1,0 +1,6 @@
+<div>Short Description of {{ .Site.Data.user123.Name }}: <p>{{ index .Site.Data.user123 "Short Description" | markdownify }}</p></div>
+
+<div>Long Description of {{ .Site.Data.user123.Name }}: <p>{{ index .Site.Data.user123.long_desc | markdownify }}</p></div>
+
+<div>This is the other thing <b>{{ .Get 1 }}</b>{{ .Get 0 }} </div>
+
