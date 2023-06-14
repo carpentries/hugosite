@@ -1,0 +1,18 @@
+{{ $past_or_upcoming := .Get 0 }}
+{{ $workshops := "" }}
+
+{{ if eq $past_or_upcoming "past" }}
+
+    {{ $workshops = getJSON "https://feeds.carpentries.org/all_past_workshops.json" }}
+
+{{ else if eq $past_or_upcoming "upcoming" }}
+
+    {{ $workshops = getJSON "https://feeds.carpentries.org/all_upcoming_workshops.json" }}
+
+{{ end }}
+
+<ul>
+{{ range $workshops }}
+<li>{{ .slug }}</li>
+{{ end }}
+</ul>
