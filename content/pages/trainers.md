@@ -1,7 +1,7 @@
 ---
 title: "Trainers"
 description: "All Carpentries Trainers"
-url: "/traineres/"
+url: "/trainers/"
 menu:
   main:
     weight: 1
