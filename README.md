@@ -4,7 +4,12 @@ This is a test of the Hugo static site generator to build The Carpentries websit
 
 ## Using Hugo
 
-* [Hugo getting started guide](https://gohugo.io/getting-started/quick-start/)
+* [Install Hugo](https://gohugo.io/installation/)
+* Clone this repository
+* Inside this repository, start the Hugo server with `hugo server` and go to http://localhost:1313/
+
+For more information review the [Hugo getting started guide](https://gohugo.io/getting-started/quick-start/).  
+
 
 ## Customization
 
