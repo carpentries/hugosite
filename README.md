@@ -33,3 +33,6 @@ echo "theme = 'ananke'" >> hugo.toml
 * Created `shortcodes` inside the `layouts` folder.  Unlike Jekyll/Liquid, data feeds can not be identified in the page markdown. They must be identified in the layouts and shortcodes.  For example:
     * In `layouts/shortcodes/lessons.html` we set a value to `$all_lessons` to get a json feed and create an HTML block for what that block should look like.
     * This is called in `/content/pages/lessons.md` for each lesson program with the first parameter for the json key and the second for the value.
+
+* Junk drawer: `misc.md` is a placeholder/sandbox for various things
+

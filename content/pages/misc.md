@@ -35,4 +35,4 @@ It also uses data from feeds.carpentries.org to build a list of data.
 
 ## Include remote data 
 
-{{< test_remote_data "is_instructor" >}}
+{{< test_remote_data "is_maintainer" >}}
