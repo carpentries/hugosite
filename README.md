@@ -1,6 +1,6 @@
 # About this site
 
-This is a test of the Hugo static site generator to build The Carpentries website.
+This is a test of the Hugo static site generator to build The Carpentries website. Using the Ananke theme, this creates a few landing pages and pulls in Carpentries data feeds.  
 
 ## Using Hugo
 
