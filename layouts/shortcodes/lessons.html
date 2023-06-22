@@ -1,27 +1,8 @@
-<!-- {{ $all_lessons := getJSON "https://feeds.carpentries.org/amy_curricula.json" }}
-<ul>
-{{ range $all_lessons }}
-<li>{{ .name }}</li>
-{{ end }} -->
+{{ $all_lessons := getJSON "https://feeds.carpentries.org/amy_curricula.json" }}
 
 
-<h1>Data Carpentry Curricula</h1>
 <ul>
-{{ range where $all_lessons "carpentry" "DC"  }}
-<li><b>{{ .name }}</b>: {{ .description }}</li>
-{{ end }}
-</ul>
-
-<h1>Library Carpentry Curricula </h1>
-<ul>
-{{ range where $all_lessons "carpentry" "LC"  }}
-<li><b>{{ .name }}</b>: {{ .description }}</li>
-{{ end }}
-</ul>
-
-<h1>Software Carpentry Curricula</h1>
-<ul>
-{{ range where $all_lessons "carpentry" "SWC"  }}
+{{ range where $all_lessons (.Get 0) (.Get 1)  }}
 <li><b>{{ .name }}</b>: {{ .description }}</li>
 {{ end }}
 </ul>

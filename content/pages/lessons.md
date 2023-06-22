@@ -7,5 +7,16 @@ menu:
 ---
 
 
+# Data Carpentry Curricula
 
-{{< lessons >}}
+{{< lessons "carpentry" "DC" >}}
+
+# Software Carpentry Curricula
+
+{{< lessons "carpentry" "SWC" >}}
+
+
+# Library Carpentry Curricula 
+
+{{< lessons "carpentry" "LC" >}}
+
