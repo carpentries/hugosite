@@ -2,3 +2,9 @@ baseURL = 'http://example.org/'
 languageCode = 'en-us'
 title = 'The Carpentries Testing Hugo'
 theme = 'ananke'
+
+[params]
+website = "https://carpentries.org"
+exec_dir = "Kari Jordan" 
+amy = "https://amy.carpentries.org"
+feeds = "https://feeds.carpentries.org"
